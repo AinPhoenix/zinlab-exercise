@@ -32,7 +32,7 @@ const Slider = ({ items }: Props) => {
           ref={leftScroll}
         >
           {items.map((item, index) => (
-            <ItemCard item={item} />
+            <ItemCard key={index} item={item} />
           ))}
         </div>
         {items.length > 5 && (

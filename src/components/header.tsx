@@ -56,6 +56,7 @@ const Header = (props: Props) => {
           {categories.map((cat: string) => {
             return (
               <Link
+                key={cat}
                 className="text-xs font-bold py-5 border-b border-b-transparent hover:border-blue-600"
                 href="/"
               >

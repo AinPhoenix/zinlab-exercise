@@ -13,7 +13,7 @@ const Bookmarks = (props: Props) => {
           <h2 className="font-bold text-3xl mb-6">Your Bookmarks</h2>
           <div className="flex gap-6">
             {BookmarksData.map((bookmark) => {
-              return <ItemCard item={bookmark} />;
+              return <ItemCard key={bookmark.title} item={bookmark} />;
             })}
           </div>
         </div>
